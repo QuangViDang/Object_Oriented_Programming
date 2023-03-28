@@ -22,7 +22,7 @@ public class Bai2_RunPingpong implements Runnable{
     }
     public static void main(String[] args){
         Runnable ping = new Bai2_RunPingpong("ping", 33);
-        Runnable pong = new Bai2_RunPingpong("pong", 33);
+        Runnable pong = new Bai2_RunPingpong("pong", 100);
         new Thread(ping).start();
         new Thread(pong).start();
     }
